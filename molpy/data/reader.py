@@ -29,11 +29,5 @@ def get_molecule(molecule):
     if not os.path.exists(filename):
         raise FileNotFoundError(f'File for molecule {molecule} does not exist.')
 
-    symbols, coords = util.open_xyz(filename)
-
-    mol = {}
-    mol['symbols'] = symbols
-    mol['geometry'] = coords
-
-    return mol
+    return util.open_xyz(filename)
 

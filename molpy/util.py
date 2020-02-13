@@ -44,4 +44,4 @@ def open_xyz(file_location):
     coords = (xyz_file[:,1:])
     coords = coords.astype(np.float)
 
-    return symbols, coords
+    return {"symbols": symbols, "geometry": coords}

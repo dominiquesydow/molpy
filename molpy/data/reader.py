@@ -26,6 +26,9 @@ def get_molecule(molecule):
     dirname = os.path.dirname(os.path.abspath(__file__))
     filename = os.path.join(dirname, 'xyz', f'{molecule}.xyz')
 
+    if not os.path.exists(filename):
+        raise FileNotFoundError(f'File for molecule {molecule} does not exist.')
+
     symbols, coords = util.open_xyz(filename)
 
     mol = {}

@@ -1,6 +1,6 @@
 import os
 
-from molpy import util
+from molpy.util import read_xyz  # from ..util import read_xyz
 
 dirname = os.path.dirname(os.path.abspath(__file__))
 filename = os.path.join(dirname, 'look_and_say.dat')
@@ -29,5 +29,5 @@ def get_molecule(molecule):
     if not os.path.exists(filename):
         raise FileNotFoundError(f'File for molecule {molecule} does not exist.')
 
-    return util.open_xyz(filename)
+    return open_xyz(filename)
 

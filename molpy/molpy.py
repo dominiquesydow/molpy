@@ -37,6 +37,9 @@ def dummy():
 
 
 class Molecule:
+    """
+    TBA
+    """
 
     def __init__(self, symbols, geometry):
         self.symbols = np.asarray(symbols, dtype=str)
@@ -49,7 +52,16 @@ class Molecule:
             raise ValueError(f'Symbol and geometry length does not match!')
 
     def distance(self, index1, index2):
-        return distance(self.geometry[index1], self.geometry[index2]) 
+    """
+    TBA
+    """
+        return distance(self.geometry[index1], self.geometry[index2])
+
+class NamedMolecule(Molecule):
+   
+    def __init__(self, name, symbols, geometry):
+        self.name = name
+        super().__init__(symbols, geometry) 
 
 if __name__ == "__main__":
     # Do something if this file is invoked on its own

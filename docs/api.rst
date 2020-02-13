@@ -7,3 +7,4 @@ API Documentation
    molpy.canvas
    molpy.util.distance
    molpy.util.read_xyz
+   molpy.Molecule

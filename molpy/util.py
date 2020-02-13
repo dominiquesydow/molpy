@@ -25,9 +25,9 @@ def distance(point1, point2):
     return np.linalg.norm(point1 - point2)
 
 
-def open_xyz(file_location):
+def read_xyz(file_location):
     """
-    Open an xyz file and return symbols and coordinates.
+    Read an xyz file and return symbols and coordinates.
 
     Parameters
     ----------

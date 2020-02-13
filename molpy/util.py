@@ -17,6 +17,11 @@ def distance(point1, point2):
     float
         The distance between point1 and point2.
 
+    Examples
+    --------
+    >>> import molpy
+    >>> molpy.util.distance([1, 0], [0, 0])
+    1.0
     """
 
     point1 = np.asarray(point1)
@@ -36,7 +41,7 @@ def read_xyz(file_location):
 
     Returns
     -------
-    tuple (numpy.ndarray, numpy.ndarray)
+    dict
         Symbols and coordinates for atoms in xyz file.
     """
 

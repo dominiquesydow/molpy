@@ -3,6 +3,7 @@ molpy
 [//]: # (Badges)
 [![Travis Build Status](https://travis-ci.com/dominiquesydow/molpy.svg?branch=master)](https://travis-ci.com/dominiquesydow/molpy)
 [![codecov](https://codecov.io/gh/dominiquesydow/molpy/branch/master/graph/badge.svg)](https://codecov.io/gh/dominiquesydow/molpy/branch/master)
+[![Documentation Status](https://readthedocs.org/projects/molpy-ds/badge/?version=latest)](https://molpy-ds.readthedocs.io/en/latest/?badge=latest)
 
 A novel molecule manipulation package.
 
